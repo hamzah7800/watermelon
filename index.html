@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="codeButton">🎁 Enter Code</button>
+  
   <div class="container">
     <h1>🍉 Watermelon Clicker</h1>
     <p id="score">Watermelons: 0</p>
@@ -14,8 +16,16 @@
 
     <div class="shop">
       <h2>🛒 Shop</h2>
-      <button id="buyAuto">Buy 10x AutoClicker (Cost: 100)</button>
-      <p id="autoCount">AutoClickers: 0</p>
+      <button onclick="buy('auto')">Buy Auto Clicker (100)</button>
+      <button onclick="buy('cps')">Buy CPS Boost (200)</button>
+      <button onclick="buy('gold')">Buy Golden Cursor (500)</button>
+      <button onclick="buy('click')">Buy More Click Power (150)</button>
+      <div id="stats">
+        <p>AutoClickers: <span id="autoCount">0</span></p>
+        <p>Click Power: <span id="clickPower">1</span></p>
+        <p>CPS: <span id="cps">10</span></p>
+        <p>Multiplier: <span id="multiplier">1x</span></p>
+      </div>
     </div>
   </div>
 
